@@ -1,0 +1,39 @@
+
+:root{
+    --color-pink: #FBDFDB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    width: 940px;
+    text-align: center;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+}
+.links {
+    position: absolute;
+    margin-left: 200px;
+}
+.links a {
+    padding-left: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.banner_image {
+    background-color: var(--color-pink);
+    width: 940px;
+    border-radius: 30px;
+    margin: 60px auto;
+}
+#logo {
+    position: absolute;
+    padding-left: 20px;
+}
