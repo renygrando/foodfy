@@ -3,9 +3,11 @@
 ---
 # O projeto  
 
-**|| Foodfy ||** :hamburger: :ramen: :pizza: :sushi: :spaghetti: é um projeto fictício de uma empresa de receitas na web. 
+:hamburger: :ramen: :pizza: :sushi: :spaghetti:  
 
-## 
+**|| Foodfy ||**  é um projeto fictício de uma empresa de receitas na web. 
+
+## Conteúdo:
 
 :computer: "Mão na massa" do meu primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: 
 
