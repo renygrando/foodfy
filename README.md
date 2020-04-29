@@ -3,9 +3,11 @@
 ---
 # O projeto  
 
-**Foodfy** :hamburger: :ramen: :pizza: :sushi: :spaghetti: é um projeto fictício de uma empresa de receitas na web. 
+**|| Foodfy ||** :hamburger: :ramen: :pizza: :sushi: :spaghetti: é um projeto fictício de uma empresa de receitas na web. 
 
-Trata-se do primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: 
+## 
+
+:computer: "Mão na massa" do meu primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: 
 
 ## Principais aprendizados:  
 - [x] `HTML e CSS`: Utilizar CSS para renderizar o HTML de acordo com o layout proposto.  
