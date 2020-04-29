@@ -9,7 +9,7 @@
 
 ## Conteúdo:
 
-:computer: "Mão na massa" do meu primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: 
+"Mão na massa" do meu primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: :computer: 
 
 ## Principais aprendizados:  
 - [x] `HTML e CSS`: Utilizar CSS para renderizar o HTML de acordo com o layout proposto.  
