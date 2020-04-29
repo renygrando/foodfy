@@ -3,6 +3,7 @@
     <head>
         <meta name="description" content="Foodfy - Aprenda a construir os melhores pratos com receitas criadas por proﬁssionais do mundo inteiro." />
         <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Foodfy - </title>
     </head>
     <body>
@@ -38,9 +39,9 @@
                         Mais acessadas
                     </h1>
                 </div>
-                <div class="most_accessed_content">
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/burger.png" alt="Triplo bacon burger">
+                <div class="most_accessed_content" >
+                    <div class="quick_recipes" id="burger">
+                        <img class="image_recipes" src="/assets/burger.png"  alt="Triplo bacon burger">
                         <p class="recipes_title"> 
                             Triplo bacon burger 
                         </p>
@@ -48,8 +49,8 @@
                             por Jorge Relato 
                         </p>
                     </div>
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/pizza.png" alt="Pizza quatro estações">
+                    <div class="quick_recipes" id="pizza">
+                        <img class="image_recipes" src="/assets/pizza.png"  alt="Pizza quatro estações">
                         <p class="recipes_title"> 
                             Pizza quatro estações 
                         </p>
@@ -57,8 +58,8 @@
                             por Fabiana Melo 
                         </p>
                     </div>
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/espaguete.png" alt="Espaguete ao alho">
+                    <div class="quick_recipes" id="espaguete">
+                        <img class="image_recipes" src="/assets/espaguete.png"  alt="Espaguete ao alho">
                         <p class="recipes_title"> 
                             Espaguete ao alho
                         </p>
@@ -66,8 +67,8 @@
                             por Julia Kinoto
                         </p>
                     </div>
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/lasanha.png" alt="Lasanha mac n’ cheese">
+                    <div class="quick_recipes" id="lasanha">
+                        <img class="image_recipes" src="/assets/lasanha.png"  alt="Lasanha mac n’ cheese">
                         <p class="recipes_title"> 
                             Lasanha mac n’ cheese
                         </p>
@@ -75,8 +76,8 @@
                             por Juliano Vieira
                         </p>
                     </div>
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/doce.png" alt="Docinhos pão-do-céu">
+                    <div class="quick_recipes" id="doce">
+                        <img class="image_recipes" src="/assets/doce.png"  alt="Docinhos pão-do-céu">
                         <p class="recipes_title"> 
                             Docinhos pão-do-céu
                         </p>
@@ -84,8 +85,8 @@
                             por Ricardo Golvea
                         </p>
                     </div>
-                    <div class="quick_recipes">
-                        <img class="image_recipes" src="/assets/asinhas.png" alt="Asinhas de frango ao barbecue">
+                    <div class="quick_recipes" id="asinhas">
+                        <img class="image_recipes" src="/assets/asinhas.png"  alt="Asinhas de frango ao barbecue">
                         <p class="recipes_title"> 
                             Asinhas de frango ao barbecue
                         </p>
@@ -95,8 +96,26 @@
                     </div>
                 </div>
             </main>
+
+            <div class="modal_overlay">
+                <div class="modal">
+                    <div class="modal_recipes">
+                        <img class="modal_image_recipes" src="">
+                        <p class="modal_recipes_title"> 
+                            
+                        </p>
+                        <p class="modal_recipes_author"> 
+                            
+                        </p>
+                    </div>
+                    <a class="close_modal">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </div>
             <footer>
                 <p>Todos direitos reservados, receitas Foodfy.</p>
             </footer>
+            <script src="/scripts.js"></script>
     </body>
 </html>
