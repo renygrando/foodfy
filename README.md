@@ -8,8 +8,8 @@
 Trata-se do primeiro desafio do **_Bootcamp Launchbase_** da **_Rocketseat_** :rocket: 
 
 ## Principais aprendizados
--[x] `HTML e CSS`: Utilizar CSS para renderizar o HTML de acordo com o layout proposto;
--[x] `Javascript`: Manipular a DOM com Javascript (Criando modal overlay para destacar as receitas).
+- [x] `HTML e CSS`: Utilizar CSS para renderizar o HTML de acordo com o layout proposto.
+- [x] `Javascript`: Manipular a DOM com Javascript (Criando modal overlay para destacar as receitas).
 
 :black_nib: No decorrer do Bootcamp este projeto ainda será aprimorado com novas funcionalidades.
 
