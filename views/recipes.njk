@@ -1,0 +1,35 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <main class="recipes_content">
+        <div class="most_accessed_content">
+            {% for item in items %}
+            <div class="quick_recipes" id="{{item.id}}">
+                <img class="image_recipes" src="{{item.id}}.png"  alt="{{item.recipe}}">
+                <p class="recipes_title"> 
+                    {{item.recipe}} 
+                </p>
+                <p class="recipes_author"> 
+                    por {{item.author}}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_recipes">
+                <img class="modal_image_recipes" src="">
+                <p class="modal_recipes_title"> 
+                    
+                </p>
+                <p class="modal_recipes_author"> 
+                    
+                </p>
+            </div>
+            <a class="close_modal">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+ {% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+    <section>
+        <div class="banner">
+            <div class="banner_text">
+                <h1 class="banner_title">
+                    As melhores receitas
+                </h1>
+                <p class="banner_subtitle">
+                    Aprenda a construir os melhores pratos <br> com receitas criadas por profissionais <br>do mundo inteiro.
+                </p>
+            </div>
+            <div class="banner_img">
+                <img src="chef.png" alt="Chef">
+            </div>
+        </div>
+    </section>
+    <main class="recipes_content">
+        <div>
+            <h1 class="content_title">
+                Mais acessadas
+            </h1>
+        </div>
+        <div class="most_accessed_content" >
+            {% for item in items %}
+            <div class="quick_recipes" id="{{item.id}}">
+                <img class="image_recipes" src="{{item.id}}.png"  alt="{{item.recipe}}">
+                <p class="recipes_title"> 
+                    {{item.recipe}} 
+                </p>
+                <p class="recipes_author"> 
+                    por {{item.author}}
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+
+    <div class="modal_overlay">
+        <div class="modal">
+            <div class="modal_recipes">
+                <img class="modal_image_recipes" src="">
+                <p class="modal_recipes_title"> 
+                </p>
+                <p class="modal_recipes_author"> 
+                </p>
+            </div>
+            <a class="close_modal">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+    </div>
+{% endblock %}
