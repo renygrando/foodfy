@@ -12,7 +12,7 @@ for (let card of cards) {
         
         modalOverlay.classList.add('active')
 
-        modalOverlay.querySelector(".modal_image_recipes").src = `/assets/${imgId}.png`
+        modalOverlay.querySelector(".modal_image_recipes").src = `${imgId}.png`
         modalOverlay.querySelector(".modal_recipes_title").textContent = recipeTitle
         modalOverlay.querySelector(".modal_recipes_author").textContent = recipeAuthor
     })
