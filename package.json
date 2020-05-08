@@ -1,0 +1,29 @@
+{
+  "name": "production",
+  "version": "1.0.0",
+  "description": "Projeto realizado para treinamento de HTML, CSS e Javascript",
+  "main": "scripts.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renygrando/foodfy.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Reny Grando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renygrando/foodfy/issues"
+  },
+  "homepage": "https://github.com/renygrando/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "nunjucks": "^3.2.1"
+  }
+}
