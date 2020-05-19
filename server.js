@@ -4,7 +4,7 @@ const nunjucks = require('nunjucks')
 
 //Chamando a função para utilizar no projeto
 const server = express()
-const recipes = require('./data')
+const recipes = require('./data-recipes')
 
 //Setando a view engine (motor de view) que vou utilizar, qual arquivo vou renderizar
 server.set('view engine', 'njk')
@@ -23,6 +23,9 @@ server.get('/', function(req, res) {
 })
 server.get('/recipes', function(req, res) {
     return res.render('recipes', {items: recipes})
+})
+server.get('/recipe-detail', function(req, res) {
+    return res.render('recipe-detail', {items: recipes})
 })
 server.get('/about', function(req, res) {
     return res.render('about')
