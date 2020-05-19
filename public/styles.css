@@ -3,6 +3,7 @@
     --color-pink: #FBDFDB;
     --color-black: #111111;
     --color-grey: #777777;
+    --color-middle-grey: #444444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -136,58 +137,42 @@ footer p {
     text-align: justify;
     margin: 30px 0 30px 0;
 }
-/* === MODAL ===*/
-.modal_overlay {
-    background-color: rgba(0, 0, 0 , 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
+/* === DETALHE DAS RECEITAS ===*/
+.recipe-image {
+    width: 940px;
+    height: 280px;
+    padding-bottom: 20px;
 }
-.modal {
-    background-color: #FFF;
-    width: 400px;
-    height: 300px;
-    margin: 5vh auto;
-    position: relative;
-    border-radius: 20px;
-    
-}
-.modal .close_modal {
-    color: black;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-}
-/* === MODAL ATIVO===*/
-
-.modal_overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-/* === MODAL ATIVO EXIBINDO RECEITA===*/
-
-.modal_recipes {
-    text-align: center;
-    padding-top: 50px;
-}
-.modal_image_recipes {
-    width: 300px;
-    height: 140px;
+.recipe-image img {
     border-radius: 15px;
-    
 }
-.modal_recipes_title {
-    font-size: 18px;
-    line-height: 21px;
+.recipe-title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
     color: var(--color-black);
-    margin-top: 10px;
 }
-.modal_recipes_author {
-    font-size: 14px;
-    line-height: 16px;
+.recipe-author {
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
     color: var(--color-grey);
+}
+.recipe-procedure h2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 20px 0 20px;
+}
+.recipe-procedure li {
+    margin-left: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-middle-grey);
+}
+.recipe-procedure p {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-middle-grey);
+    text-align: justify;
 }
