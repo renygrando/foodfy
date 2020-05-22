@@ -1,19 +1,39 @@
 {% extends 'layout.njk' %}
 
 {% block content %}
-    <main class="recipes_content">
-        <div class="most_accessed_content">
-            {% for item in items %}
-            <div class="quick_recipes">
-                <img class="image_recipes" src="{{item.image}}"  alt="{{item.title}}">
-                <p class="recipes_title"> 
-                    {{item.title}} 
-                </p>
-                <p class="recipes_author"> 
-                    por {{item.author}}
-                </p>
-            </div>
-            {% endfor %}
+    {% for item in items %}
+    <article class="recipes_content">
+        <div class="recipe-image">
+            <img src="{{item.image}}"  alt="{{item.title}}">
         </div>
-    </main>
- {% endblock %}
+        <h1 class="recipe-title">
+            {{item.title}}
+        </h1>
+        <h3 class="recipe-author">
+            por {{item.author}}
+        </h3>
+        <div class="recipe-procedure">
+            <h2>
+            Ingredientes
+            </h2>
+            <ul>
+                {% for ingredient in item.ingredients %}
+                <li>{{ingredient}} </li>
+                {% endfor %}
+            </ul>    
+            <h2>
+            Modo de preparo
+            </h2>
+            <ul>
+                {% for prepare in item.preparation %}
+                <li>{{prepare}} </li>
+                {% endfor %}
+            </ul>
+            <h2>
+            Informações adicionais
+            </h2>
+            <p> {{item.information}} </p>          
+        </div>
+    </article>
+    {% endfor %}
+{% endblock %}
