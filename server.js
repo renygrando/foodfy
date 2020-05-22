@@ -15,7 +15,9 @@ server.use(express.static('assets'))
 
 //Configurando o caminho das paginas que vou renderizar e qual opção, nesse caso estou usando o express passando a variável server.
 nunjucks.configure('views', {
-    express: server
+    express: server,
+    autoescape:false,
+    noCache: true
 })
 //Renderizando a página index na rota principal e outras paginas do site
 server.get('/', function(req, res) {
@@ -24,12 +26,21 @@ server.get('/', function(req, res) {
 server.get('/recipes', function(req, res) {
     return res.render('recipes', {items: recipes})
 })
-server.get('/recipe-detail', function(req, res) {
-    return res.render('recipe-detail', {items: recipes})
-})
 server.get('/about', function(req, res) {
     return res.render('about')
 })
+server.get("/recipes/:id", function (req, res) {
+    const id = req.params.id;
+    const recipe = recipes.find(function(recipe){
+        return recipe.id == id
+    })
+        
+    if (!recipe){
+        return res.send('Receita não encontrada')
+    }
+    return res.render('recipes', {item: recipe})
+
+  })
 //Mostrando que o servidor está rodando
 server.listen(5000, function() {
     console.log ('server is running')
