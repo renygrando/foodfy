@@ -29,7 +29,7 @@ server.get('/recipes', function(req, res) {
 server.get('/about', function(req, res) {
     return res.render('about')
 })
-server.get("/recipes/:id", function (req, res) {
+server.get("/recipe-detail/:id", function (req, res) {
     const id = req.params.id;
     const recipe = recipes.find(function(recipe){
         return recipe.id == id
@@ -38,7 +38,7 @@ server.get("/recipes/:id", function (req, res) {
     if (!recipe){
         return res.send('Receita não encontrada')
     }
-    return res.render('recipes', {item: recipe})
+    return res.render('recipe-detail', {item: recipe})
 
   })
 //Mostrando que o servidor está rodando
