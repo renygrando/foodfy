@@ -176,3 +176,22 @@ footer p {
     color: var(--color-middle-grey);
     text-align: justify;
 }
+/* === MOSTRAR E ESCONDER OS INGREDIENTES DA RECEITA ===*/
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.showhide-btn {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-middle-grey);
+    text-align: justify;
+    margin: 23px 0;
+    cursor: pointer;
+}
+.recipe_showhide{
+    display: block;
+}
+.recipe_showhide.active {
+    display: none;
+}
