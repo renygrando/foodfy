@@ -1,37 +1,29 @@
 {% extends 'layout.njk' %}
 
 {% block content %}
-    
     <article class="recipes_content">
         <div class="recipe-image">
             <img src="{{item.image}}"  alt="{{item.title}}">
         </div>
-        <h1 class="recipe-title">
-            {{item.title}}
-        </h1>
-        <h3 class="recipe-author">
-            por {{item.author}}
-        </h3>
+        <h1 class="recipe-title"> {{item.title}} </h1>
+        <h3 class="recipe-author"> por {{item.author}} </h3>
         <div class="recipe-procedure">
-            <h2>
-            Ingredientes
-            </h2>
-            <ul>
+            <div class="wrapper">
+                <h2> Ingredientes </h2>
+                <a class="showhide-btn">Esconder</a>
+            </div>
+            <ul class="recipe_showhide">
                 {% for ingredient in item.ingredients %}
-                <li>{{ingredient}} </li>
+                    <li> {{ingredient}} </li>
                 {% endfor %}
             </ul>    
-            <h2>
-            Modo de preparo
-            </h2>
+            <h2> Modo de preparo </h2>
             <ul>
                 {% for prepare in item.preparation %}
-                <li>{{prepare}} </li>
+                    <li> {{prepare}} </li>
                 {% endfor %}
             </ul>
-            <h2>
-            Informações adicionais
-            </h2>
+            <h2> Informações adicionais </h2>
             <p> {{item.information}} </p>          
         </div>
     </article>
