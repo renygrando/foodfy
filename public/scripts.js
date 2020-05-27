@@ -53,8 +53,8 @@ for (let card of cards) {
 // }
 // document.querySelector('.hide-btn').addEventListener('click', showHide('recipe_showhide'))
 
-const ingredient = document.querySelector('recipe_showhide');
-const showHide = document.querySelector('showhide_btn');
+const ingredient = document.querySelector('.recipe_showhide');
+const showHide = document.querySelector('.showhide_btn');
 
 showHide.addEventListener('click', function() {
     if (showHide.innerHTML == 'Esconder') {

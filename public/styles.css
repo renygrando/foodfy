@@ -181,7 +181,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-.showhide-btn {
+.showhide_btn {
     font-size: 14px;
     line-height: 24px;
     color: var(--color-middle-grey);
