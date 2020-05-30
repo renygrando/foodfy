@@ -15,7 +15,7 @@
 
 ## Front-End:  
 - [x] `HTML e CSS`: Renderizando o HTML de acordo com o layout proposto pelo desafio; 
-- [x] `Javascript`: Criando funcionalidades como identificar a receita clicada e encaminhas para rota específica e botão mostra/esconde da página da receita;
+- [x] `Javascript`: Criando funcionalidades como identificar a receita clicada e encaminhar para rota específica e botão mostra/esconde da página da receita;
 - [x] `Nunjucks`: Template Engine para utilização de dados dinâmicos.
 
 ## Back-End
