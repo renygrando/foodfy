@@ -11,9 +11,16 @@
 
 "Mão na massa" do meu primeiro desafio do **_Bootcamp Launchbase_** da [**_Rocketseat_**](https://rocketseat.com.br) :purple_heart: :rocket: :computer: 
 
-## Principais aprendizados:  
-- [x] `HTML e CSS`: Utilizar CSS para renderizar o HTML de acordo com o layout proposto.  
-- [x] `Javascript`: Manipular a DOM com Javascript (Criando modal overlay para destacar as receitas).   
+# Principais aprendizados
+
+## Front-End:  
+- [x] `HTML e CSS`: Renderizando o HTML de acordo com o layout proposto pelo desafio; 
+- [x] `Javascript`: Criando funcionalidades como identificar a receita clicada e encaminhas para rota específica e botão mostra/esconde da página da receita;
+- [x] `Nunjucks`: Template Engine para utilização de dados dinâmicos.
+
+## Back-End
+- [x] `Express`: Framework utilizado para criar meu primeiro servidor. Criando rotas e passando dados do back para o front;
+- [x] `Nodemon`: Ferramenta utilizada para reiniciar o servidor automaticamente.
 
 ## Observações:  
 
