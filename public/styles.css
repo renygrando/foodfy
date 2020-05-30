@@ -1,4 +1,3 @@
-
 :root{
     --color-pink: #FBDFDB;
     --color-black: #111111;
@@ -6,7 +5,6 @@
     --color-middle-grey: #444444;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -71,7 +69,6 @@ header {
     position: absolute;
     margin: 66px 0 0 600px;
 }
-
 .recipes_content{
     width: 940px;
     margin: 0 auto;
@@ -80,9 +77,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    
 }
-
 .quick_recipes {
     margin-bottom: 0px; 
     width: 300px;
@@ -93,7 +88,6 @@ header {
     height: 140px;
     border-radius: 15px;
 }
-
 .recipes_title {
     font-size: 18px;
     line-height: 21px;
@@ -114,7 +108,6 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
 footer p {
     color: #999999;
     font-size: 14px;
@@ -179,7 +172,7 @@ footer p {
 /* === MOSTRAR E ESCONDER OS INGREDIENTES DA RECEITA ===*/
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 30% 70%;
 }
 .showhide_btn {
     font-size: 14px;
