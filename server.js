@@ -19,6 +19,7 @@ nunjucks.configure('views', {
     autoescape:false,
     noCache: true
 })
+
 //Renderizando a página index na rota principal e outras paginas do site
 server.get('/', function(req, res) {
     return res.render('index', {items: recipes})
@@ -41,6 +42,7 @@ server.get("/recipe-detail/:id", function (req, res) {
     return res.render('recipe-detail', {item: recipe})
 
   })
+  
 //Mostrando que o servidor está rodando
 server.listen(5000, function() {
     console.log ('server is running')
