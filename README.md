@@ -1,4 +1,4 @@
-[![Foodfy](https://github.com/renygrando/foodfy/blob/master/assets/foodfy2.gif?raw=true)]
+![Foodfy](https://github.com/renygrando/foodfy/blob/master/assets/foodfy2.gif?raw=true)
 ---
 # O projeto  
 
