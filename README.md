@@ -1,5 +1,4 @@
-[![Image from Gyazo](https://i.gyazo.com/75da0a5cc4023f7ba98ddc33f73a2869.gif)](https://gyazo.com/75da0a5cc4023f7ba98ddc33f73a2869)
-
+[![Foodfy](https://github.com/renygrando/foodfy/blob/master/assets/foodfy2.gif?raw=true)]
 ---
 # O projeto  
 
