@@ -1,36 +1,53 @@
 {% extends 'layout.njk' %}
 
 {% block content %}
-    <article class="recipes_content">
-        <div class="recipe-image">
-            <img src="{{item.image}}"  alt="{{item.title}}">
+    <main class="recipe_preparation">
+        <div style="padding: 0 0 20px">
+            <img src="{{item.image}}" alt="{{item.title}}">
         </div>
-        <h1 class="recipe-title"> {{item.title}} </h1>
-        <h3 class="recipe-author"> por {{item.author}} </h3>
-        <div class="recipe-procedure">
+        <h1>
+            {{item.title}}
+        </h1>
+        <h3>
+            por
+            {{item.author}}
+        </h3>
+        <div>
             <div class="wrapper">
-                <h2> Ingredientes </h2>
-                <a class="showhide_btn">Esconder</a>
+                <h2>
+                    Ingredientes
+                </h2>
+                <a class="showhide_btn">ABRIR</a>
             </div>
             <ul class="recipe_showhide">
                 {% for ingredient in item.ingredients %}
-                    <li> {{ingredient}} </li>
-                {% endfor %}
-            </ul>    
-            <div class="wrapper">
-                <h2> Modo de preparo </h2>
-                <a class="showhide_btn">Esconder</a>
-            </div>
-            <ul class="recipe_showhide">
-                {% for prepare in item.preparation %}
-                    <li> {{prepare}} </li>
+                    <li>
+                        {{ingredient}}
+                    </li>
                 {% endfor %}
             </ul>
             <div class="wrapper">
-                <h2> Informações adicionais </h2>
-                <a class="showhide_btn">Esconder</a>
+                <h2>
+                    Modo de preparo
+                </h2>
+                <a class="showhide_btn">ABRIR</a>
             </div>
-            <p class="recipe_showhide"> {{item.information}} </p>          
+            <ul class="recipe_showhide">
+                {% for prepare in item.preparation %}
+                    <li>
+                        {{prepare}}
+                    </li>
+                {% endfor %}
+            </ul>
+            <div class="wrapper">
+                <h2>
+                    Informações adicionais
+                </h2>
+                <a class="showhide_btn">ABRIR</a>
+            </div>
+            <p class="recipe_showhide">
+                {{item.information}}
+            </p>
         </div>
-    </article>
+    </main>
 {% endblock %}
