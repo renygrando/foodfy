@@ -3,26 +3,34 @@
 {% block content %}
     <section>
         <div class="banner">
-            <div class="banner_text">
-                <h1 class="banner_title"> As melhores receitas </h1>
-                <p class="banner_subtitle"> Aprenda a construir os melhores pratos <br> com receitas criadas por profissionais <br>do mundo inteiro. </p>
+            <div> 
+                <h1> 
+                    As melhores receitas
+                </h1>
+                <p> 
+                    Aprenda a construir os melhores pratos
+                    com receitas criadas por profissionais
+                    do mundo inteiro.
+                </p>
             </div>
-            <div class="banner_img">
-                <img src="chef.png" alt="Chef">
+            <div>
+                <img src="chef.png" alt="Chefe de Cozinha">
             </div>
         </div>
     </section>
-    <main class="recipes_content">
-        <div>
-            <h1 class="content_title"> Conheça nossas receitas </h1>
-        </div>
-        <div class="most_accessed_content" >
+    <main>
+        <div class="recipes_content" style="margin-top: 30px">
             {% for item in items %}
-            <div class="quick_recipes" id="{{item.id}}">
-                <img class="image_recipes" src="{{item.image}}"  alt="{{item.title}}">
-                <p class="recipes_title"> {{item.title}} </p>
-                <p class="recipes_author"> por {{item.author}} </p>
-            </div>
+                <div class="recipes" id="{{item.id}}">
+                    <img src="{{item.image}}" alt="{{item.title}}">
+                    <h2>
+                        {{item.title}}
+                    </h2>
+                    <h3>
+                        por
+                        {{item.author}}
+                    </h3>
+                </div>
             {% endfor %}
         </div>
     </main>
