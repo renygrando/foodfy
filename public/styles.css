@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 :root {
     --color-pink: #FBDFDB;
     --color-black: #111111;
     --color-grey: #777777;
     --color-middle-grey: #444444;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -132,6 +132,7 @@ footer p {
     width: 300px;
     height: 140px;
     border-radius: 15px;
+    box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.2);
 }
 
 .recipes h2 {
@@ -150,8 +151,10 @@ footer p {
 /* === DETALHE DAS RECEITAS ===*/
 .recipe_preparation img {
     width: 100%;
+    max-height: 280px;
     border-radius: 15px;
     box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.2);
+    object-fit: cover;
 }
 
 .recipe_preparation h1 {
@@ -208,7 +211,8 @@ footer p {
 .recipe_showhide.active {
     overflow: visible;
     opacity: 100%;
-    max-height: 300px;
+    height: 100%;
+    max-height: 600px;
     transition: max-height 200ms ease-in, opacity 200ms ease-in;
 }
 
@@ -216,6 +220,7 @@ footer p {
     padding: 14px 0;
     overflow: hidden;
     opacity: 0%;
+    height: 0;
     max-height: 0px;
     transition: max-height 200ms ease-in, opacity 200ms ease-in;
 }
