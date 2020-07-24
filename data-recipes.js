@@ -1,7 +1,7 @@
 module.exports = [
     {
       id: 1,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/burger.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/burger.png?raw=true',
       title: 'Triplo bacon burger',
       author: 'Jorge Relato',
       ingredients: [
@@ -25,7 +25,7 @@ module.exports = [
     },
     {
       id: 2,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/pizza.png?raw=true',
       title: 'Pizza 4 estações',
       author: 'Fabiana Melo',
       ingredients: [
@@ -53,7 +53,7 @@ module.exports = [
     },
     {
       id: 3,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/asinha.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/asinhas.png?raw=true',
       title: 'Asinhas de frango ao barbecue',
       author: 'Vania Steroski',
       ingredients: [
@@ -71,7 +71,7 @@ module.exports = [
     },
     {
       id: 4,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/lasanha.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/lasanha.png?raw=true',
       title: "Lasanha mac n' cheese",
       author: 'Juliano Vieira',
       ingredients: [
@@ -92,7 +92,7 @@ module.exports = [
     },
     {
       id: 5,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/macarrao.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/espaguete.png?raw=true',
       title: 'Espaguete ao alho',
       author: 'Júlia Kinoto',
       ingredients: [
@@ -117,7 +117,7 @@ module.exports = [
     },
     {
       id: 6,
-      image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/doce.png',
+      image: 'https://github.com/renygrando/foodfy/blob/master/assets/doce.png?raw=true',
       title: 'Docinhos pão-do-céu',
       author: 'Ricardo Golvea',
       ingredients: [
