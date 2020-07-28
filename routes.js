@@ -1,27 +1,21 @@
 const express = require('express')
 const routes = express.Router()
 const data = require('./data.json')
+const recipes = require('./controllers/recipes')
 
-routes.get('/', function(req, res) {
+//pagina inicial
+routes.get('/', (req, res) => {
     return res.render('index', {items: data.recipes})
 })
-routes.get('/recipes', function(req, res) {
-    return res.render('recipes', {items: data.recipes})
-})
-routes.get('/about', function(req, res) {
-    return res.render('about')
-})
-routes.get("/recipe-detail/:id", function (req, res) {
-    const id = req.params.id;
-    const recipe = data.recipes.find(function(recipe){
-        return recipe.id == id
-    })
-        
-    if (!recipe){
-        return res.send('Receita não encontrada')
-    }
-    return res.render('recipe-detail', {item: recipe})
 
-  })
+//pagina sobre
+routes.get('/about', recipes.about)
+
+//pagina de receitas e detalhe de receita
+routes.get('/recipes', recipes.recipes)
+routes.get("/recipe-detail/:id", recipes.show)
+
+//pagina admin de receitas
+routes.get("/admin/recipes", recipes.index)
   
-  module.exports = routes
+module.exports = routes
