@@ -1,19 +1,23 @@
 .wrap-header {
     background-color: black;
 }
+
 .wrap-header header {
-    padding: 50px 0;
+    padding: 20px 0;
     margin: 0 auto;
 }
+
 main {
     padding-top: 30px;
 }
+
 main h1 {
-        font-size: 24px;
-        line-height: 28px;
-        color: var(--color-black);
-        margin: 0 0 30px 0;
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--color-black);
+    margin: 0 0 30px 0;
 }
+
 .recipes_content {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -25,27 +29,33 @@ main h1 {
     grid-template-columns: 1fr 2fr;
     cursor: default;
 }
+
 .recipes img {
     width: 150px;
     height: 70px;
 }
+
 .wrap-titleauthor {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .recipes .wrap-titleauthor h2 {
     margin: 0;
 }
+
 .recipes .wrap-titleauthor h3 {
     font-weight: normal;
 }
+
 .recipes .wrap-titleauthor p {
     font-size: 12px;
     color: var(--color-grey);
     cursor: pointer;
 }
+
 .recipes .wrap-titleauthor p:hover {
     font-weight: bold;
     color: red;
