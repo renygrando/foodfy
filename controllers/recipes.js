@@ -26,3 +26,6 @@ exports.index = (req, res) => {
     return res.render("admin/recipes/index", {items: data.recipes})
 }
 
+exports.edit = (req, res) => {
+    return res.send("oi")
+}
