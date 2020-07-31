@@ -22,25 +22,22 @@ body {
 /* LINKS e LOGO - TOPO */
 header {
     width: 940px;
-    text-align: center;
     margin: 50px auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 6px;
     border-bottom: solid 1px var(--color-black);
 }
 
 header .links {
-    position: absolute;
-    margin-left: 200px;
+    width: 100%;
+    margin-left: 120px;
 }
 
 header .links a {
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
-    display: inline-flex;
     color: var(--color-black);
     transition: 300ms;
     position: relative;
@@ -64,15 +61,12 @@ header .links a + a {
     margin-left: 50px;
 }
 
-header .links:n {
-    float: right;
-}
-
 header .links a:last-child {
     background-color: var(--color-pink);
     padding: 5px;
     border-radius: 8px;
     font-size: 16px;
+    margin-left: 68%;
 }
 
 header .links a:hover {
