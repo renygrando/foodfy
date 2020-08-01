@@ -17,21 +17,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
+    max-width: 1905px;
 }
 
 /* LINKS e LOGO - TOPO */
 header {
-    width: 940px;
+    max-width: 940px;
     margin: 50px auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     padding-bottom: 6px;
     border-bottom: solid 1px var(--color-black);
 }
 
 header .links {
     width: 100%;
-    margin-left: 120px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header .links a {
@@ -66,7 +70,7 @@ header .links a:last-child {
     padding: 5px;
     border-radius: 8px;
     font-size: 16px;
-    margin-left: 68%;
+    justify-self: flex-end !important;
 }
 
 header .links a:hover {
@@ -103,8 +107,8 @@ main {
 
 /* FOOTER */
 footer {
-    width: auto;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     margin: 50px auto 0;
     background-color: #EEEEEE;
     display: flex;
@@ -185,8 +189,9 @@ footer p {
 }
 
 .recipes img {
-    width: 300px;
-    height: 140px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0.3em 0.3em rgba(0, 0, 0, 0.2);
 }
