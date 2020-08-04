@@ -8,7 +8,7 @@ for (let card of cards) {
     })
 }
 
-// CRIANDO BOTÃO MOSTRA-ESCONDE NA PÁGINA DE RECEITAS
+// BOTÃO MOSTRA-ESCONDE NA PÁGINA DE RECEITAS 
 const ingredient = document.querySelectorAll('.recipe_showhide');
 const showHide = document.querySelectorAll('.showhide_btn');
 
@@ -24,7 +24,7 @@ for (let i = 0; i < showHide.length; i++) {
     })
 }
 
-//MENU ATIVO
+//MENU COM LINK ATIVO
 const currentPage = location.pathname
 const menuItems = document.querySelectorAll(".links a")
 
