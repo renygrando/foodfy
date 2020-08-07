@@ -19,5 +19,6 @@ routes.get("/recipes/detail/:id", recipes.show)
 
 //pagina admin de receitas
 routes.get("/admin/recipes", recipes.index)
+routes.get("/admin/create-recipe", recipes.create)
 
 module.exports = routes
