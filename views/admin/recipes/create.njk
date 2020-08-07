@@ -2,26 +2,53 @@
 
 {% block content %}
     <main>
-        <div>   
-                <h4>
-                    Imagem da receita
-                </h4>
-                <input placeholder="http://" type="text">
-                <h2>
-                    Título da receita
-                </h2>
-                <h2>
-                    Autor da receita
-                </h2>
-                <h2>
-                    Ingredientes
-                </h2>
-                <h2>
-                    Modo de preparo
-                </h2>
-                <h2>
-                    Informações adicionais
-                </h2>
+        <h1>
+            Cadastrar receita
+        </h1>
+        <div class="wrap-field">
+            <div>
+            <img src="../chef.png" width="" alt="">
+            </div>
+            <div>   
+                <form action="PUT">
+                    <div class="item">
+                        <h3>
+                            Imagem da receita
+                        </h3>
+                        <input placeholder="http://" type="url" name="image" value="{{ item.image }}">
+                    </div>
+                    <div class="item">
+                        <h3>
+                            Título da receita
+                        </h3>
+                        <input placeholder="ex: Abrobrinha refogada" type="text" name="title" value="{{ item.title }}">
+                    </div>
+                    <div class="item">
+                        <h3>
+                            Autor da receita
+                        </h3>
+                        <input placeholder="ex: João da Silva" type="text" name="author" value="{{ item.author }}">
+                    </div>
+                    <div class="item">
+                        <h3>
+                            Ingredientes
+                        </h3>
+                        <input placeholder="ex: 3 dentes de alho" type="text" name="ingredients" value="{{ item.ingredients }}">
+                    </div>
+                    <div class="item">
+                        <h3>
+                            Modo de preparo
+                        </h3>
+                        <input placeholder="ex: Coloque primeiro alho e as cebolas e frite até dourar" type="text" name="preparation" value="{{ item.preparation }}">
+                    </div>
+                    <div class="item">
+                        <h3>
+                            informações adicionais
+                        </h3>
+                        <input placeholder="ex: Preaqueça o forno por 10 minutos" type="text" name="information" value="{{ item.information }}">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 {% endblock %}
