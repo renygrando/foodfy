@@ -73,7 +73,7 @@ main h1 {
     margin-right: 1rem;
 }
 
-.item p {
+button {
     font-size: 13px;
     border: solid 1px #000;
     border-radius: 8px;
@@ -85,7 +85,7 @@ main h1 {
     align-self: flex-end;
 }
 
-.item p:hover {
+button:hover {
     background-color: black;
     color: #FFF;
     transition: background-color 300ms ease-in, color 300ms ease-out;
