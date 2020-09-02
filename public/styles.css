@@ -29,13 +29,14 @@ body {
 /* LINKS e LOGO - TOPO */
 header {
     width: 100%;
-    height: 4rem;
+    height: 6rem;
     margin-bottom: 2rem;
     max-width: 940px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 6px;
+    padding-top: 16px;
     border-bottom: solid 1px var(--color-black);
 }
 
